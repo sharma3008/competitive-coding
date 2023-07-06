@@ -2,9 +2,11 @@
 using namespace std;
 void generate_ith_jth_bitareset()
 {
+	
 	int i,j;
 	cin>>i>>j;
 	int k;
+	// consider number 1 and right shift the number by i places so that ith position is set same with j now perform or operation
 	k = (1<<i)|(1<<j);
 	cout<<k<<endl;
 	
